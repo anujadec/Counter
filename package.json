@@ -1,0 +1,24 @@
+{
+  "name": "react-counter",
+  "version": "0.0.421",
+  "description": "Create an app that keeps track of a total count. See the final result here: https://mjn50xwm6x.codesandbox.io/\n\nIt should:\n- display the count\n- display a + button\n- display a - button\n- display a reset button\n- increase the count when  + is clicked\n- decrease the count when - is clicked\n- reset the count when reset is clicked",
+  "keywords": [],
+  "homepage": "https://codesandbox.io/s/zw64zj2kq3",
+  "main": "index.js",
+  "dependencies": {
+    "react-dom": "^16.0.0",
+    "react": "^16.0.0",
+    "popper.js": "^1.14.3",
+    "jquery": "^3.3.1",
+    "bootstrap": "^4.1.3"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
