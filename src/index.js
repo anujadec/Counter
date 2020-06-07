@@ -12,24 +12,20 @@ const counterStyle = {
 };
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      counter: 0
-    };
-  }
-
+  state = {
+    counter: 0
+  };
   addCounter = () => {
-    this.setState({ counter: this.state.counter + 1 });
+    this.setState(({ counter }) => ({ counter: counter + 1 }));
   };
 
   minusCounter = () => {
     if (this.state.counter > 0)
-      this.setState({ counter: this.state.counter - 1 });
+      this.setState(({ counter }) => ({ counter: counter - 1 }));
   };
 
   resetCounter = () => {
-    this.setState({ counter: 0 });
+    this.setState(({ counter }) => ({ counter: 0 }));
   };
   render() {
     return (
